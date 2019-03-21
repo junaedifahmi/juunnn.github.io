@@ -1,0 +1,33 @@
+header, main, footer {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+}
+
+body{
+  background-color: #b37d4e;
+}
+
+.sidenav,.collapsible-body{
+  background-color: #cd5360;
+}
+
+h1 {
+  transition-duration: 1s;
+  padding-left: 10px;
+  color: #428496;
+  background: #286da8;
+}
+
+h1:hover {
+  opacity: 1.0;
+  color: white;
+  padding-left: 30px;
+  border-style: solid;
+  border-width: 0px 0px 5px 0px;
+  border-color: #cd5360;
+}
