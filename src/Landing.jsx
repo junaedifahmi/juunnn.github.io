@@ -6,6 +6,9 @@ import Heading from "./components/Heading"
 import Home from "./components/Home";
 import MyWork from "./components/MyWork";
 import MyCircle from "./components/MyCircle";
+import MySelf from "./components/MySelf";
+
+import style from './css/Landing.module.css'
 
 
 export default class Landing extends Component {
@@ -15,9 +18,10 @@ export default class Landing extends Component {
             <Fragment>
                 <BrowserRouter>
                     <Heading />
-                    <main>
+                    <main className={style.main}>
                         <Switch>
                             <Route path='/' exact component={Home}/>
+                            <Route path='/myself' exact component={MySelf} />
                             <Route path='/mywork' exact component={MyWork} />
                             <Route path='/mycircle' exact component={MyCircle} />
                         </Switch>

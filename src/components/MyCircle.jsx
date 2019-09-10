@@ -5,9 +5,12 @@ import wa from '../img/icon/WhatsApp.png'
 import tele from '../img/icon/Telegram.jpg'
 import gmail from '../img/icon/gmail.png'
 
+import style from '../css/MyCircle.module.css'
+
 export default class MyCircle extends Component {   
     render() {
         return (
+            <div className={style.bg}>
             <div className={'container'}>       
                 <h1 className={'center'}> Get To Know me better</h1>
                 <Row>
@@ -16,7 +19,7 @@ export default class MyCircle extends Component {
                     </Col>
 
                     <Col m={4} s={12}>
-                        <a href="https://wa.me/6281317856756/Hi"> <img src={wa} width={230} alt='Whatsapp' /> </a>
+                        <a href="https://wa.me/6281317856756/Hi Juunnn"> <img src={wa} width={230} alt='Whatsapp' /> </a>
                     </Col>
 
                     <Col m={4} s={12}>
@@ -28,6 +31,7 @@ export default class MyCircle extends Component {
                 <Row>
                 <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="junaedifahmi"><a class="LI-simple-link" href='https://id.linkedin.com/in/junaedifahmi?trk=profile-badge'>Junaedi Fahmi</a></div>
                 </Row>
+            </div>
             </div>
         )
     }
